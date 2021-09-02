@@ -1,0 +1,39 @@
+{
+  "name": "emjelqplllg.angular",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "12.2.4",
+    "@angular/common": "12.2.4",
+    "@angular/compiler": "12.2.4",
+    "@angular/core": "12.2.4",
+    "@angular/forms": "12.2.4",
+    "@angular/platform-browser": "12.2.4",
+    "@angular/platform-browser-dynamic": "12.2.4",
+    "@angular/router": "12.2.4",
+    "angular-in-memory-web-api": "0.11.0",
+    "rxjs": "6.6.7",
+    "selenium-webdriver": "^4.0.0-rc-1",
+    "zone.js": "~0.11.4"
+  },
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test-playwright": "npx playwright test --headed",
+    "test-selenium": "ts-node src/tests/selenium.spec.js"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~12.2.4",
+    "@angular/cli": "~12.2.4",
+    "@angular/compiler-cli": "~12.2.4",
+    "@playwright/test": "^1.14.1",
+    "@types/node": "^12.20.23",
+    "chromedriver": "~88.0.0",
+    "codelyzer": "^6.0.0",
+    "ts-node": "^8.3.0",
+    "tslib": "^2.3.1",
+    "tslint": "~6.1.0",
+    "typescript": "~4.3.5"
+  }
+}
