@@ -1,5 +1,8 @@
 {
   "compileOnSave": false,
+  "ts-node": {
+    "transpileOnly": true
+  },
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
@@ -14,11 +17,13 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2017",
-    "module": "es2020",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
@@ -26,5 +31,7 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true,
     "enableIvy": true
-  }
+  },
+  "include": ["**/src/*"],
+  "exclude": ["node_modules",  "dist"]
 }
