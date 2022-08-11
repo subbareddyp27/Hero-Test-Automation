@@ -22,7 +22,7 @@
     "build": "ng build",
     "test-playwright": "npx playwright test --headed",
     "test-selenium": "ts-node src/tests/selenium.spec.js",
-    "test-cucumber": "HEADLESS=false node ./node_modules/.bin/cucumber-js src/tests/features/**/*.feature --require src/tests/support/custom-world.ts --require src/tests/support/setup.ts --require src/tests/support/step-definitions/**/*.ts --require-module ts-node/register --publish-quiet",
+    "test-cucumber": "npx cucumber-js src/tests/features/**/*.feature --require src/tests/support/custom-world.ts --require src/tests/support/setup.ts --require src/tests/support/step-definitions/**/*.ts --require-module ts-node/register --publish-quiet",
     "test-cucumber:focus": "npm run test-cucumber -- --tags @focus"
   },
   "devDependencies": {
