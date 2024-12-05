@@ -23,10 +23,6 @@ export class HeroService {
 
   /** GET heroes from the server */
   getHeroes(): Observable<Hero[]> {
-    // if (Math.random() > 0.85) {
-    //   this.messageService.add(`sleep!`);
-    //   HeroService.sleep(40 * 1000)
-    // }
     return this.http.get<Hero[]>(this.heroesUrl)
       .pipe(
         tap(_ => this.log('fetched heroes')),

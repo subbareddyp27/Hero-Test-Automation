@@ -20,6 +20,12 @@ export class DashboardComponent implements OnInit {
     this.heroService.getHeroes()
       .subscribe(heroes => this.heroes = heroes.slice(6, 10));
   }
+
+  public showRandomly(percentage: number) {
+    const rand = Math.random();
+    console.log(rand);
+    return  rand < percentage;
+  }
 }
 
 

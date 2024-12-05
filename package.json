@@ -1,6 +1,6 @@
 {
-  "name": "emjelqplllg.angular",
-  "version": "0.0.0",
+  "name": "hero-test-automation",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.1.0",
@@ -12,29 +12,24 @@
     "@angular/platform-browser-dynamic": "^14.1.0",
     "@angular/router": "^14.1.0",
     "angular-in-memory-web-api": "^0.14.0",
+    "playwright": "^1.49.0",
     "rxjs": "^6.6.7",
-    "selenium-webdriver": "^4.3.1",
     "zone.js": "~0.11.7"
   },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test-playwright": "npx playwright test --headed",
-    "test-selenium": "ts-node src/tests/selenium.spec.js",
-    "test-cucumber": "npx cucumber-js src/tests/features/**/*.feature --require src/tests/support/custom-world.ts --require src/tests/support/setup.ts --require src/tests/support/step-definitions/**/*.ts --require-module ts-node/register --publish-quiet",
-    "test-cucumber:focus": "npm run test-cucumber -- --tags @focus"
+    "test-playwright": "npx playwright test --headed"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.1.0",
     "@angular/cli": "^14.1.0",
     "@angular/compiler-cli": "^14.1.0",
     "@cucumber/cucumber": "^8.5.1",
-    "@playwright/test": "^1.14.1",
+    "@playwright/test": "^1.49.0",
     "@types/node": "^18.6.2",
-    "chromedriver": "100.0.0",
     "codelyzer": "^6.0.2",
-    "playwright": "^1.14.1",
     "ts-node": "^10.9.1",
     "tslib": "^2.4.0",
     "tslint": "~6.1.3",
