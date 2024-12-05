@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tour of Heroes';
+
+  public showRandomly(percentage: number) {
+    const rand = Math.random();
+    console.log(rand);
+    return  rand < percentage;
+  }
 }
 
 

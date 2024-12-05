@@ -5,22 +5,6 @@
       {{hero.name}}
   </a>
 </div>
-<div *ngIf="showRandomly(0.1)">
-  <dialog #dialog>
-    <div>
-      Are you enjoying the website?
-      <select>
-        <option value="default">Choose…</option>
-        <option>Yes</option>
-        <option>No</option>
-      </select>
-    </div>
-    <div>
-      <button (click)="dialog.close()">OK</button>
-    </div>
-  </dialog>
-  {{dialog.showModal()}}
-</div>
 <app-hero-search></app-hero-search>
 
 

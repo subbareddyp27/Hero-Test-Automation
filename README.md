@@ -1,5 +1,5 @@
 ## Submitting your code ##
-    Please fork this project, complete the assigned tests, and share your forked repo with the owner of this repo
+    Please fork this project, complete the assigned tests, and share a link to your forked repo with us
 
 ## Starting the App ##
     - Make sure you have node version 18 or higher installed.

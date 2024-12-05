@@ -18,13 +18,7 @@ export class DashboardComponent implements OnInit {
 
   getHeroes(): void {
     this.heroService.getHeroes()
-      .subscribe(heroes => this.heroes = heroes.slice(6, 10));
-  }
-
-  public showRandomly(percentage: number) {
-    const rand = Math.random();
-    console.log(rand);
-    return  rand < percentage;
+      .subscribe(heroes => this.heroes = heroes.sort((a,b) => b.score - a.score).slice(0, 4));
   }
 }
 

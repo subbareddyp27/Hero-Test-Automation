@@ -3,6 +3,22 @@
   <a routerLink="/dashboard">Dashboard</a>
   <a routerLink="/heroes">Heroes</a>
 </nav>
+<div *ngIf="showRandomly(0.05)">
+  <dialog #dialog>
+    <div>
+      Are you enjoying the website?
+      <select>
+        <option value="default">Choose…</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+    </div>
+    <div>
+      <button (click)="dialog.close()">OK</button>
+    </div>
+  </dialog>
+  {{dialog.showModal()}}
+</div>
 <router-outlet></router-outlet>
 <app-messages></app-messages>
 

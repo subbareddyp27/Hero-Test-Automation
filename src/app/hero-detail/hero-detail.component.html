@@ -5,6 +5,10 @@
     <label for="hero-name">Hero name: </label>
     <input id="hero-name" [(ngModel)]="hero.name" placeholder="Hero name"/>
   </div>
+  <div>
+    <label for="hero-score">Hero score: </label>
+    <input id="hero-score" [(ngModel)]="hero.score" placeholder="0"/>
+  </div>
   <button (click)="goBack()">go back</button>
   <button (click)="save()">save</button>
 </div>
